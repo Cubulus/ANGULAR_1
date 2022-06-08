@@ -1,0 +1,29 @@
+h2{
+    text-align: center;
+    color: silver;
+    font-weight: bold;
+}
+li{
+    text-align: center;
+}
+hr{
+    width: 100%;
+    color: silver;
+    height: 5px;
+    border-radius: 10px;
+    box-shadow: 2px 5px 8px slategrey;
+}
+.Naranja{
+    color: orange;
+    font-weight: bold;
+    font-style: italic;
+}
+.Marron{
+    color: brown;
+    font-weight: 400px;
+    font-size: x-large;
+}
+.repetidor{
+    font-weight: bold;
+    font-style: italic;
+}
