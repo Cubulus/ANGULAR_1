@@ -1,0 +1,56 @@
+<h2>Ejemplo Pipes</h2>
+<p>
+  Son elementos que usaremos en el DOM, del HTML junto con las directivas que van
+  a tomar un elemento de entrada; Y le van a dar cierto formato, y nos va a permitir
+  además entregar una salida diferente.
+</p>
+
+<div>
+  <h3>Pipes Texto</h3>
+  <ol>
+    <li>Sin formato: {{texto}}</li>
+    <li>En minusculas; {{texto | lowercase}}</li>
+    <li>En mayusculas: {{texto | uppercase}}</li>
+    <li>Titulo: {{texto | titlecase}}</li>
+  </ol>
+  <hr>
+  <h3>Pipes Numero</h3>
+  <ul>
+    <li>Sin formato: {{numero}}</li>
+    <li>4 decimales; {{numero | number: '.4'}}</li>
+    <li>2 decimales: {{numero | number: '.2-2'}}</li>
+    <li>10 digitos y 3 decimales: {{numero | number: '10.3-3'}}</li>
+  </ul>
+  <hr>
+  <h3>Pipes Monedas</h3>
+  <ol>
+    <li>Sin formato: {{numero}}</li>
+    <li> Con formato: {{numero | currency }} </li>
+    <li> En Euros: {{numero | currency:'EUR'}}</li>
+    <li>En Euros, con codigo: {{numero | currency:'EUR':'code'}}</li>
+    <li>Euros con Simbolo: {{numero | currency:'EUR': 'symbol'}}</li>
+  </ol>
+  <hr>
+  <h3>Pipes de Porcentajes</h3>
+  <ul>
+    <li>Sin formato: {{porcentaje}}</li>
+    <li>Porcentaje: {{porcentaje | percent}}</li>
+    <li>Porcentaje con 1 decimal: {{porcentaje | percent:'.1'}}</li>
+    <li>Porcentaje con 2 digitos y 2 decimales: {{porcentaje | percent: '2.2-2'}}</li>
+  </ul>
+  <hr>
+  <h3>Pipes Fechas</h3>
+  <ol>
+    <li>Sin formato: {{fecha}}</li>
+    <li>Formato Corto: {{fecha | date:'short'}}</li>
+    <li>Formato Largo: {{fecha | date:'full'}}</li>
+    <li>Fecha: {{fecha | date:'shortDate'}}</li>
+    <li>Hora: {{fecha | date: 'shortTime'}}</li>
+  </ol>
+  <hr>
+  <h3>Pipe de json</h3>
+  <ul>
+    <li>Sin formato: {{jsonObjeto}}</li>
+    <li>Con formato json: {{jsonObjeto | json}}</li>
+  </ul>
+</div>
