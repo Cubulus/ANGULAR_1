@@ -1,0 +1,45 @@
+<!--
+    ----------------TIPOS DE DATA BINDING-----------------
+    1º StringInterpolation:
+    {{}}TypeScript => HTML
+    Desarrollar o presentar una información (Array, variables, etc...) y mostrarlo
+    en HTML, para interacción o visualización del usuario.
+
+    2º EventBinding
+    ()TypeScript <= HTML
+    La típica escucha de eventos desde HTML
+
+    3º PropertyBinding
+    []TypeScript <=HTML
+-->
+
+<div class="container">
+    <h2 style="text-align: center;">-----Ejemplos de Binding-----</h2>
+    <h3>String Interpolation</h3>
+    {{title}}<br>
+    {{3+7-2}}<br>
+    {{nombre+ " "}}
+    <hr>
+    <h3>Event Binding</h3>
+    <button class="btn btn-secondary" (click)="saludar()">SALUDAR</button>
+    <hr>
+    <h3>Property Binding</h3>
+    <button class="btn btn-warning" [disabled]="habilitado">Púlsame</button>
+    <hr>
+    <!--
+        6.[(ngModel)]
+        Directiva estructural y de Componentes. Aporta la funcionalidad de sincronización
+        de DATOS y/o ESTRUCTURAS de HTML y asi como los de su modelo (a la referencia definida en ts).
+        En definitiva, esta directiva guarda el valor que tenga la propiedad y actualiza a si mismo
+        dicha propiedad, siempre y cuando haya interacción por parte del usuario.
+    -->
+    <div>
+        <h3>Two Way data Binding</h3>
+        <label> Anotaciones: </label>&nbsp;
+        <input type="text" placeholder="escribe aqui" [(ngModel)]='nombre'>
+        <p>
+            Escribe: &nbsp;{{nombre+" "+" "+apellido}}
+        </p>
+    </div>
+
+</div>
