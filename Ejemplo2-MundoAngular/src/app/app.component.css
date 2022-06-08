@@ -1,0 +1,8 @@
+h1{
+    text-align: center;
+    font-weight: 600;
+    font-size: 60px;
+    color: #edeee9;
+    font-family: 'Georgia';
+    text-shadow: makelongshadow(#3e3e40);
+}
